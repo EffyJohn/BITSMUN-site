@@ -137,7 +137,7 @@ body {
     /* text-align: center; */
 }
 
-.letter__heading {
+.letter__heading, .details__heading {
     text-align: center;
     font-size: 24px;
     font-weight: 600;
@@ -167,6 +167,12 @@ body {
 .letter__body--end {
     margin-top: 0;
     margin-bottom: 10px;
+}
+
+.details {
+    background-color: #f6f6f6;
+    padding: 50px;
+    font-family: Lato, sans-serif;
 }
 
 @media all and (min-width: 768px) {
