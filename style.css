@@ -235,7 +235,7 @@ a{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .team__card {
@@ -245,9 +245,7 @@ a{
     padding: 20px 20px;
     text-align: center;
     width: 225px;
-    margin: 15px 35px;
-    box-shadow: 5px 5px 2px 2px #ddd;
-
+    margin: 15px 20px;
     
     display: flex;
     flex-direction: column;
@@ -362,6 +360,12 @@ a{
 
 .lazyloaded {
     animation: slide-up 0.5s ease-out forwards;
+}
+
+@media all and (min-width: 1024px) {
+    .team__card {
+        margin: 15px 35px;
+    }
 }
 
 @media all and (min-width: 768px) {
