@@ -1,10 +1,7 @@
-let navbarButton = document.getElementsByClassName("navbar__button");
-let navbarMenu = document.getElementsByClassName("navbar__menu");
+let navbar = document.getElementsByClassName('navbar')[0];
+let navToggle = document.getElementsByClassName('navbar__toggle')[0];
+let loadTrigger = document.getElementsByClassName('load-trigger')[0];
 
-navbarButton[0].addEventListener("click", function() {
-    if(navbarMenu[0].classList.contains("navbar__menu--view-hidden")) {
-        navbarMenu[0].classList.remove("navbar__menu--view-hidden");
-    } else {
-        navbarMenu[0].classList.add("navbar__menu--view-hidden");
-    }
-})
+navbar.classList.append("hidden");
+navToggle.classList.append("stowed");
+
