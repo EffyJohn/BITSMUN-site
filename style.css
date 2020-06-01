@@ -30,16 +30,20 @@ a {
     top: auto;
     height: 10vh;
     width: 100vw;
-    background: #013148AA;
+    background: #013148DD;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    clip-path: circle(100vw at 10%);
+    -webkit-clip-path: circle(100vw at 10%);
+    transition: all 1.5s ease-in-out;
 }
 
 .navbar.hidden {
     background: transparent;
-    justify-content: flex-start;
+    clip-path: circle(6vh at 9%);
+    -webkit-clip-path: circle(6vh at 9%);
 }
 
 .navbar__toggle {
@@ -57,8 +61,7 @@ a {
 .navbar__toggle.stowed {
     background: #013148;
     color: #FFFFFF;
-    box-shadow: 3px 3px 3px #999;
-    margin-left: 6vw;
+    box-shadow: 3px 3px 3px #013148AA;
 }
 
 .navbar__toggle>i {
@@ -72,10 +75,6 @@ a {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-}
-
-.navbar__menu.stowed {
-    display: none;
 }
 
 .navbar__menu__item {
@@ -374,9 +373,6 @@ a {
 }
 
 @media all and (min-width: 768px) {
-
-    
-
     .landing {
         height: 40vw;
     }
@@ -429,5 +425,19 @@ a {
     to {
         opacity: 1;
         transform: translateY(0px);
+    }
+}
+
+@media all and (max-width: 768px) {
+    .navbar {
+        flex-direction: column-reverse;
+        height: 100vh;
+        width: fit-content;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .navbar__menu {
+        flex-direction: column-reverse;
     }
 }
