@@ -218,6 +218,62 @@ a {
     font-family: Lato, sans-serif;
 }
 
+.team__card-container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team__card {
+    background-color: #fff;
+    border: 1px solid #013148;
+    border-radius: 25px;
+    padding: 20px 20px;
+    text-align: center;
+    width: 225px;
+    margin: 15px 20px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card__name, .card__post {
+    color: #303030;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 26.125px;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.card__photo {
+    align-self: center;
+}
+
+.card__name {
+    font-weight: 900;
+}
+
+.card__social-container {
+    margin-top: 10px;
+}
+
+.card__social {
+    background-color: #2c3e50;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    margin-right: 5px;
+}
+
+.card__social:hover {
+    background-color: #013148;
+}
 
 .contact {
     padding: 50px;
@@ -292,6 +348,12 @@ a {
 
 .lazyloaded {
     animation: slide-up 0.5s ease-out forwards;
+}
+
+@media all and (min-width: 1024px) {
+    .team__card {
+        margin: 15px 35px;
+    }
 }
 
 @media all and (min-width: 768px) {
