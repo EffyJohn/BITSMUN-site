@@ -9,11 +9,13 @@
 </head>
 <body id="Home">
     <nav class="navbar">
-        <a class="navbar__brand-name" href="#Home">BITSMUNPilani</a>
-        <div class="navbar__button">
-            <span class="navbar__button__icon-bar"></span>
-            <span class="navbar__button__icon-bar"></span>
-            <span class="navbar__button__icon-bar"></span>
+        <div class="navbar__top">
+            <a class="navbar__brand-name" href="#Home">BITSMUNPilani</a>
+            <div class="navbar__button">
+                <span class="navbar__button__icon-bar"></span>
+                <span class="navbar__button__icon-bar"></span>
+                <span class="navbar__button__icon-bar"></span>
+            </div>
         </div>
         <div class="navbar__menu navbar__menu--view-hidden">
             <a href="#details" class="navbar__menu__item">COMMITTEES</a>
@@ -47,10 +49,10 @@
         <h4 class="letter__body letter__body--end">Secretary General</h4>
         <h4 class="letter__body letter__body--end">BITSMUN 2020</h4>
     </div>
-    <div class="details" id="details">
+    <div class="details lazyload" data-expand="-200" id="details">
         <h2 class="details__heading">COMMITTEES</h2>
     </div>
-    <div class="apply" id="apply">
+    <div class="apply lazyload" data-expand="-200" id="apply">
         <h2 class="apply__heading">APPLY AS</h2>
         <br>
         <div class="apply__button-container"><a class="apply__button" href="">DELEGATE OR MP</a></div>
@@ -71,10 +73,10 @@
             </div>
         </div>
     </div>
-    <div class="team">
+    <div class="team lazyload" data-expand="-200" id="team">
         <h2 class="team__heading">TEAM</h2>
     </div>
-    <div class="contact">
+    <div class="contact lazyload" data-expand="-200" id="contact">
         <h2 class="contact__heading">CONTACT</h2>
         <br>
         <div class="contact__container">
@@ -101,4 +103,5 @@
     <center class="disclaimer">Disclaimer: The BITSMUN society reserves all rights, including the right to make changes in allotments and prizes at any time, with no prior notice.</center>
     <br>
     <script src="bitsmun.js"></script>
+    <script src="lazysizes.min.js"></script>
 </body>
