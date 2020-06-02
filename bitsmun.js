@@ -26,9 +26,22 @@ navToggle.addEventListener('click', function(){
 
 for (let i = 0; i < navItem.length; ++i) {
     navItem[i].addEventListener('click', function() {
+        const vw = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+        if(vw <= 768) {
+            navbar.classList.add("hidden");
+            navToggle.classList.add("stowed");
+            navMenu.classList.add("stowed");
+            navTop.classList.add("stowed");
+        }
+    });
+};
+
+navTop.addEventListener('click', function() {
+    const vw = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+    if(vw <= 768) {
         navbar.classList.add("hidden");
         navToggle.classList.add("stowed");
         navMenu.classList.add("stowed");
         navTop.classList.add("stowed");
-    })
-}
+    }
+});
