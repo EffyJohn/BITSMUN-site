@@ -138,7 +138,7 @@ a {
 }
 
 .landing__logo {
-    width: 30vw;
+    width: 25vh;
 }
 
 .landing__subtitle {
@@ -187,7 +187,6 @@ a {
 }
 
 .details {
-    background-color: #f6f6f6;
     padding: 50px;
     font-family: Lato, sans-serif;
 }
@@ -199,7 +198,6 @@ a {
 
 .apply__button-container {
     text-align: center;
-    padding-top: 10px;
 }
 
 .apply__button {
@@ -258,8 +256,11 @@ a {
     margin: 0;
 }
 
-.team {
+.team-container, .details-container {
     background-color: #f6f6f6;
+}
+
+.team {
     padding: 50px;
     font-family: Lato, sans-serif;
 }
