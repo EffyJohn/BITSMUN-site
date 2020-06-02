@@ -138,13 +138,13 @@ a {
 }
 
 .landing__logo {
-    width: 25vh;
+    width: 30vh;
 }
 
 .landing__subtitle {
     position: relative;
     display: block;
-    font-size: 29px;
+    font-size: 4vh;
     font-family: Montserrat, sans-serif;
     font-weight: 400;
     margin-top: 10px;
@@ -172,7 +172,7 @@ a {
 }
 
 .letter__body {
-    font-size: 19px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 26.125px;
     color: #303030;
@@ -416,6 +416,10 @@ a {
 
     .landing__logo {
         width: 25vw;
+    }
+
+    .landing__subtitle {
+        font-size: 5vh;
     }
 
     .letter__salu, .letter__body {
