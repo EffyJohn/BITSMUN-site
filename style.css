@@ -488,8 +488,8 @@ a {
     
     .navbar.hidden {
         background: transparent;
-        clip-path: circle(6vh at 94% 94%);
-        -webkit-clip-path: circle(6vh at 93.5% 94%);
+        clip-path: circle(6vh at 91.5% 93%);
+        -webkit-clip-path: circle(6vh at 91.5% 93%);
     }
     
     .navbar__toggle {
