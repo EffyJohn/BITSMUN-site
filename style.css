@@ -93,9 +93,9 @@ a {
   box-shadow: 3px 3px 3px #013148aa;
 }
 
-/* .navbar__toggle.stowed:hover {
+.navbar__toggle.stowed:hover {
   background: #013148;
-} */
+}
 
 .navbar__toggle > i {
   font-size: 7vh;
