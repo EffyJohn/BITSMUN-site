@@ -8,6 +8,11 @@
                                     supported by Chrome and Opera */
 }
 
+* {
+  padding: 0;
+  margin: 0;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -157,6 +162,7 @@ a {
 
 .letter__heading,
 .details__heading,
+.details__subheading,
 .apply__heading,
 .team__heading,
 .contact__heading {
@@ -191,8 +197,11 @@ a {
 }
 
 .details {
-  padding: 50px;
+  padding: 50px 0;
   font-family: Lato, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .apply {
@@ -409,6 +418,88 @@ a {
   animation: slide-up 0.5s ease-out forwards;
 }
 
+/* Code for Committees begins here.
+Todo: @kumar, make sure you clean up the entire CSS file.
+* Arrange all the classes properly in neatly contained comment blocks.
+* Use comments to explain neatly how each class works, or atleat, why it exists. 
+*/
+
+.committees {
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  transition-duration: 1s;
+}
+
+.committees__card {
+  height: fit-content;
+  width: 18vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  transition-duration: 1s;
+}
+
+.committees__card.process {
+  opacity: 0;
+  width: 0 !important;
+}
+
+.committees__card.hidden {
+  display: none;
+  width: 0;
+  transition-duration: 1s;
+}
+
+.committees__img {
+  height: auto;
+  width: 18vw;
+}
+
+.committees__data {
+  display: none;
+}
+
+.committees__data.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 75vw;
+  height: fit-content;
+}
+
+.details__subheading--default,
+.details__subheading--close.active {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 20px 0;
+  line-height: 26.4px;
+}
+
+.details__subheading--default.hidden,
+.details__subheading--close {
+  display: none;
+  color: #013148;
+}
+
+.details__subheading--close {
+  cursor: pointer;
+  background-color: #013148;
+  color: #ffffff;
+  width: fit-content;
+}
+
+/* End of Committees section code */
+
 @media all and (min-width: 1024px) {
   .team__card {
     margin: 15px 35px;
@@ -519,5 +610,11 @@ a {
     margin: -3vh;
     margin-left: calc(-8vh + -5vw);
     left: auto;
+  }
+
+  .committees {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
