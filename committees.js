@@ -24,7 +24,10 @@ for (card of cards) {
     }
 
     let datum = document.getElementsByClassName(this.id)[0];
-    datum.classList.add("active");
+    setTimeout(function () {
+      datum.classList.add("active");
+    }, 1000);
+
     subheadingDefault.classList.add("hidden");
     subheadingClose.classList.add("active");
   });

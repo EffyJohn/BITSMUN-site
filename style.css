@@ -448,7 +448,6 @@ Todo: @kumar, make sure you clean up the entire CSS file.
 
 .committees__card.process {
   opacity: 0;
-  width: 0 !important;
 }
 
 .committees__card.hidden {
