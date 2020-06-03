@@ -40,15 +40,15 @@ a {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  clip-path: circle(100vw at 15%);
-  -webkit-clip-path: circle(100vw at 15%);
+  clip-path: circle(100vw at calc(10vw + 4vh));
+  -webkit-clip-path: circle(100vw at calc(10vw + 4vh));
   transition: all 1.5s ease-in-out;
 }
 
 .navbar.hidden {
   background: transparent;
-  clip-path: circle(8vh at 11%);
-  -webkit-clip-path: circle(8vh at 11%);
+  clip-path: circle(6vh at calc(10vw + 4vh));
+  -webkit-clip-path: circle(6vh at calc(10vw + 4vh));
 }
 
 .navbar__top {
@@ -620,8 +620,8 @@ Todo: @kumar, make sure you clean up the entire CSS file.
     width: 100vw;
     align-items: flex-end;
     justify-content: flex-start;
-    clip-path: circle(100vw at 100% 94%);
-    -webkit-clip-path: circle(100vw at 100% 94%);
+    clip-path: circle(100vw at 100vw 93vh);
+    -webkit-clip-path: circle(100vw at 100vw 93vh);
   }
 
   .navbar__menu {
@@ -633,8 +633,8 @@ Todo: @kumar, make sure you clean up the entire CSS file.
 
   .navbar.hidden {
     background: transparent;
-    clip-path: circle(6vh at 91.5% 93%);
-    -webkit-clip-path: circle(6vh at 91.5% 93%);
+    clip-path: circle(5vh at calc(96vw - 4vh) 93vh);
+    -webkit-clip-path: circle(5vh at calc(96vw - 4vh) 93vh);
   }
 
   .navbar__toggle {
