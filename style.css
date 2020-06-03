@@ -8,6 +8,11 @@
                                     supported by Chrome and Opera */
 }
 
+* {
+  padding: 0;
+  margin: 0;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -157,6 +162,7 @@ a {
 
 .letter__heading,
 .details__heading,
+.details__subheading,
 .apply__heading,
 .team__heading,
 .contact__heading {
@@ -191,8 +197,11 @@ a {
 }
 
 .details {
-  padding: 50px;
+  padding: 50px 0;
   font-family: Lato, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .apply {
@@ -410,6 +419,126 @@ a {
   animation: slide-up 0.5s ease-out forwards;
 }
 
+/* Code for Committees begins here.
+Todo: @kumar, make sure you clean up the entire CSS file.
+* Arrange all the classes properly in neatly contained comment blocks.
+* Use comments to explain neatly how each class works, or atleat, why it exists. 
+*/
+
+.committees {
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  transition-duration: 1s;
+}
+
+.committees__card {
+  width: 18vw;
+  padding: 1.5vw;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; */
+  transition-duration: 1s;
+  text-align: center;
+}
+
+.committees__card.process {
+  opacity: 0;
+}
+
+.committees__card.hidden {
+  display: none;
+  width: 0;
+  transition-duration: 1s;
+}
+
+.committees__title {
+  color: #303030;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 26.125px;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.committees__name {
+  color: #303030;
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.committees__img {
+  height: 15vw;
+  width: 15vw;
+}
+
+.committees__data {
+  display: none;
+}
+
+.committees__data.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+  position: relative;
+  top: 8vw;
+}
+
+.committees__chair,
+.committees__agenda {
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.details__subheading--default,
+.details__subheading--close.active {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 20px 0;
+  line-height: 26.4px;
+}
+
+.details__subheading--close.active {
+  cursor: pointer;
+  background-color: #f6f6f6;
+  color: #013148;
+  padding: 7.8px 15.6px;
+  border: 1px solid #013148;
+  transition-duration: 0.7s;
+}
+
+.details__subheading--close.active:hover {
+  background-color: #013148;
+  color: #f6f6f6;
+}
+
+.details__subheading--default.hidden,
+.details__subheading--close {
+  display: none;
+  color: #013148;
+}
+
+.details__subheading--close {
+  cursor: pointer;
+  background-color: #013148;
+  color: #ffffff;
+  width: fit-content;
+}
+
+/* End of Committees section code */
+
 @media all and (min-width: 1024px) {
   .team__card {
     margin: 15px 35px;
@@ -520,5 +649,26 @@ a {
     margin: -3vh;
     margin-left: calc(-8vh + -5vw);
     left: auto;
+  }
+
+  .committees {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .committees__img {
+    height: 150px;
+    width: 150px;
+  }
+
+  .committees__card {
+    width: 180px;
+  }
+
+  .committees__data.active {
+    width: 80vw;
+    position: relative;
+    top: 0;
   }
 }

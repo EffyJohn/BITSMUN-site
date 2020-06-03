@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <head>
   <title>BITSMUN Pilani</title>
   <link rel="icon" href="faviconTab.png" type="image/x-icon" />
@@ -11,6 +12,7 @@
   <link rel="stylesheet" href="style.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
+
 <body id="home">
   <nav class="navbar noSelect">
     <a href="#home" class="navbar__top"
@@ -88,7 +90,102 @@
     </div>
     <div class="details-container">
       <div class="details lazyload" data-expand="-200" id="details">
-        <h2 class="details__heading">COMMITTEES</h2>
+        <h2 class="details__heading noSelect">COMMITTEES</h2>
+        <h3 class="details__subheading details__subheading--default noSelect">
+          Click on logo for more information
+        </h3>
+        <h3 class="details__subheading details__subheading--close noSelect">
+          Return to Committee selection
+        </h3>
+        <div class="committees">
+          <div id="committee1" class="committees__card">
+            <img src="img/UNSC.png" alt="UNSC Logo" class="committees__img noSelect" />
+            <div class="committees__title">UNSC</div>
+            <div class="committees__name">Security Council</div>
+          </div>
+          <div id="committee2" class="committees__card">
+            <img
+              src="img/SPECPOL.png"
+              alt="SPECPOL"
+              class="committees__img noSelect"
+            />
+
+            <div class="committees__title">SPECPOL</div>
+            <div class="committees__name">
+              UNGA 4: Special Political and Decolonization Committee
+            </div>
+          </div>
+          <div id="committee3" class="committees__card">
+            <img src="img/UNHRC.png" alt="UNHRC" class="committees__img noSelect" />
+            <div class="committees__title">UNHRC</div>
+            <div class="committees__name">
+              United Nations Human Rights Council
+            </div>
+          </div>
+          <div id="committee4" class="committees__card">
+            <img src="img/LOK.png" alt="Lok Sabha" class="committees__img noSelect" />
+            <div class="committees__title">Lok Sabha</div>
+            <div class="committees__name">Lok Sabha</div>
+          </div>
+          <div id="committee5" class="committees__card">
+            <img src="img/UNODC.png" alt="" class="committees__img noSelect" />
+            <div class="committees__title">UNODC</div>
+            <div class="committees__name">
+              United Nations Office on Drugs and Crime
+            </div>
+          </div>
+          <div class="committees__data committee1">
+            <div class="committees__chair"><strong>PRESIDENT:</strong> Saumya Mukhopadhyay</div>
+            <div class="committees__vicechair"></div>
+            <div class="committees__agenda">
+              <strong>AGENDA:</strong> Situation in Middle East - Assessing the threat to
+              international peace and
+              security surrounding the regions of Syria, Iraq, Iran.
+            </div>
+            <div class="committees__guide"></div>
+          </div>
+          <div class="committees__data committee2">
+            <div class="committees__chair"><strong>CHAIRPERSON:</strong> Satrajit Sahani</div>
+            <div class="committees__vicechair"></div>
+            <div class="committees__agenda">
+              <strong>AGENDA:</strong> Permanent sovereignty of the Palestinian people in the<br />
+              Occupied Palestinian territory, including East Jerusalem, and
+              of
+              the Arab population in the occupied Syrian Golan region over<br />
+              their natural resources.
+            </div>
+            <div class="committees__guide"></div>
+          </div>
+          <div class="committees__data committee3">
+            <div class="committees__chair"><strong>CHAIRPERSON:</strong> Tannistha Sinha</div>
+            <div class="committees__vicechair"></div>
+            <div class="committees__agenda">
+              <strong>AGENDA:</strong> Protection of the rights of racial and ethnic minorities
+              in conflict zones.
+            </div>
+            <div class="committees__guide"></div>
+          </div>
+          <div class="committees__data committee4">
+            <div class="committees__chair"><strong>SPEAKER:</strong> Bhoomik Sharma</div>
+            <div class="committees__vicechair"></div>
+            <div class="committees__agenda">
+              <strong>AGENDA:</strong> Discourse on the implementation of National Population
+              Register
+              and National Register of Citizens.
+            </div>
+            <div class="committees__guide"></div>
+          </div>
+          <div class="committees__data committee5">
+            <div class="committees__chair"><strong>CHAIRPERSON:</strong> Neel Duttaroy</div>
+            <div class="committees__vicechair"></div>
+            <div class="committees__agenda">
+              <strong>AGENDA:</strong> Countering global narcotic drug production and
+              distribution
+              with specific focus on South and Central America.
+            </div>
+            <div class="committees__guide"></div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="apply lazyload" data-expand="-200" id="apply">
@@ -342,13 +439,7 @@
           </div>
         </div>
         <br class="noSelect" />
-        <iframe
-          class="googleMap"
-          frameborder="0"
-          style="border: 0;"
-          src="https://www.google.com/maps/embed/v1/search?q=BITS%20Pilani%2C%20Pilani%2C%20Rajasthan%2C%20India&key=AIzaSyA-LqWftUVus5XAUUMMkrtXiaSxS2fH7bw"
-          allowfullscreen
-        ></iframe>
+        <iframe class="googleMap" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJZUOK6MEZEzkR3hwzeZsLyq4&key=AIzaSyA-LqWftUVus5XAUUMMkrtXiaSxS2fH7bw" allowfullscreen></iframe>
       </div>
     </div>
     <center class="disclaimer noSelect">
@@ -360,6 +451,8 @@
       class="noSelect"
     /><br class="noSelect" />
   </main>
+
   <script src="main.js" class="load-trigger"></script>
+  <script src="committees.js"></script>
   <script src="lazysizes.min.js"></script>
 </body>
