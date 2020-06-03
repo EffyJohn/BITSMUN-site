@@ -436,13 +436,14 @@ Todo: @kumar, make sure you clean up the entire CSS file.
 }
 
 .committees__card {
-  height: fit-content;
   width: 18vw;
-  display: flex;
+  padding: 1.5vw;
+  /* display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  align-items: center; */
   transition-duration: 1s;
+  text-align: center;
 }
 
 .committees__card.process {
@@ -456,9 +457,26 @@ Todo: @kumar, make sure you clean up the entire CSS file.
   transition-duration: 1s;
 }
 
+.committees__title {
+  color: #303030;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 26.125px;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.committees__name {
+  color: #303030;
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
 .committees__img {
-  height: auto;
-  width: 18vw;
+  height: 15vw;
+  width: 15vw;
 }
 
 .committees__data {
@@ -470,8 +488,15 @@ Todo: @kumar, make sure you clean up the entire CSS file.
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 75vw;
-  height: fit-content;
+  width: 50vw;
+  position: relative;
+  top: 8vw;
+}
+
+.committees__chair,
+.committees__agenda {
+  margin-bottom: 10px;
+  text-align: justify;
 }
 
 .details__subheading--default,
@@ -479,10 +504,24 @@ Todo: @kumar, make sure you clean up the entire CSS file.
   display: flex;
   justify-content: center;
   text-align: center;
-  font-size: 24px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 400;
   margin: 20px 0;
   line-height: 26.4px;
+}
+
+.details__subheading--close.active {
+  cursor: pointer;
+  background-color: #f6f6f6;
+  color: #013148;
+  padding: 7.8px 15.6px;
+  border: 1px solid #013148;
+  transition-duration: 0.7s;
+}
+
+.details__subheading--close.active:hover {
+  background-color: #013148;
+  color: #f6f6f6;
 }
 
 .details__subheading--default.hidden,
@@ -616,5 +655,20 @@ Todo: @kumar, make sure you clean up the entire CSS file.
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+
+  .committees__img {
+    height: 150px;
+    width: 150px;
+  }
+
+  .committees__card {
+    width: 180px;
+  }
+
+  .committees__data.active {
+    width: 80vw;
+    position: relative;
+    top: 0;
   }
 }
