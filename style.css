@@ -280,12 +280,12 @@ a {
 }
 
 .team__card-container {
-    max-width: 1080px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .team__card {
@@ -395,7 +395,8 @@ a {
   background-color: #013148;
 }
 
-.card__social > i, .social__button > i {
+.card__social > i,
+.social__button > i {
   color: #fff;
   font-size: 13.5px;
   font-weight: 400;
@@ -512,7 +513,7 @@ Todo: @kumar, make sure you clean up the entire CSS file.
   margin: 20px 0;
   line-height: 26.4px;
   padding: 7.8px 15.6px;
-  border: 1px solid #f6f6f6 ;
+  border: 1px solid #f6f6f6;
 }
 
 .details__subheading--close.active {
@@ -682,7 +683,7 @@ Todo: @kumar, make sure you clean up the entire CSS file.
   .card__social--scr-lg {
     display: none;
   }
-  
+
   .card__social--scr-sm {
     display: inline-block;
   }
