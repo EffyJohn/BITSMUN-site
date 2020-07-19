@@ -443,21 +443,29 @@ Todo: @kumar, make sure you clean up the entire CSS file.
 
 .committees__card {
   width: 18vw;
-  padding: 1vw;
+  padding-top: 2vw;
   opacity: 1;
   transition: opacity 1s;
   /* , width 1s ease-out 1s, padding 1s ease-out 1s; */
   text-align: center;
+  background: #00000009;
+  pointer-events: auto;
+}
+
+.committees__card.inactive {
+  pointer-events: none;
 }
 
 .committees__card.process {
   opacity: 0;
+  pointer-events: none;
 }
 
 .committees__card.hidden {
   display: none;
   width: 0;
   transition-duration: 1s;
+  pointer-events: none;
 }
 
 .committees__title {
