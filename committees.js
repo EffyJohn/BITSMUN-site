@@ -20,6 +20,8 @@ for (card of cards) {
       if (currCard != this) {
         currCard.classList.add("process");
         Hide(currCard);
+      } else {
+        currCard.classList.add("inactive");
       }
     }
 
@@ -39,6 +41,8 @@ subheadingClose.addEventListener("click", function () {
       card.classList.add("process");
       card.classList.remove("hidden");
       card.classList.remove("process");
+    } else {
+      card.classList.remove("inactive");
     }
   }
 

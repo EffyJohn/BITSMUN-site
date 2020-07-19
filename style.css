@@ -40,15 +40,15 @@ a {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  clip-path: circle(100vw at 15%);
-  -webkit-clip-path: circle(100vw at 15%);
+  clip-path: circle(100vw at calc(10vw + 4vh));
+  -webkit-clip-path: circle(100vw at calc(10vw + 4vh));
   transition: all 1.5s ease-in-out;
 }
 
 .navbar.hidden {
   background: transparent;
-  clip-path: circle(8vh at 11%);
-  -webkit-clip-path: circle(8vh at 11%);
+  clip-path: circle(6vh at calc(10vw + 4vh));
+  -webkit-clip-path: circle(6vh at calc(10vw + 4vh));
 }
 
 .navbar__top {
@@ -280,12 +280,12 @@ a {
 }
 
 .team__card-container {
-    max-width: 1080px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .team__card {
@@ -344,6 +344,10 @@ a {
   background-color: #013148;
 }
 
+.card__social--scr-sm {
+  display: none;
+}
+
 .contact {
   padding: 50px;
   font-family: Lato, sans-serif;
@@ -391,7 +395,8 @@ a {
   background-color: #013148;
 }
 
-.social__glyph {
+.card__social > i,
+.social__button > i {
   color: #fff;
   font-size: 13.5px;
   font-weight: 400;
@@ -426,7 +431,7 @@ Todo: @kumar, make sure you clean up the entire CSS file.
 */
 
 .committees {
-  width: 100vw;
+  width: 100%;
   height: fit-content;
   display: flex;
   flex-direction: row;
@@ -438,23 +443,29 @@ Todo: @kumar, make sure you clean up the entire CSS file.
 
 .committees__card {
   width: 18vw;
-  padding: 1.5vw;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center; */
-  transition-duration: 1s;
+  padding-top: 2vw;
+  opacity: 1;
+  transition: opacity 1s;
+  /* , width 1s ease-out 1s, padding 1s ease-out 1s; */
   text-align: center;
+  background: #00000009;
+  pointer-events: auto;
+}
+
+.committees__card.inactive {
+  pointer-events: none;
 }
 
 .committees__card.process {
   opacity: 0;
+  pointer-events: none;
 }
 
 .committees__card.hidden {
   display: none;
   width: 0;
   transition-duration: 1s;
+  pointer-events: none;
 }
 
 .committees__title {
@@ -467,6 +478,7 @@ Todo: @kumar, make sure you clean up the entire CSS file.
 }
 
 .committees__name {
+  height: 76px;
   color: #303030;
   font-size: 16px;
   font-weight: 300;
@@ -488,15 +500,15 @@ Todo: @kumar, make sure you clean up the entire CSS file.
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 50vw;
-  position: relative;
-  top: 8vw;
+  width: 35vw;
+  padding: 1vw 5vw;
+  height: calc(15vw + 102px);
 }
 
 .committees__chair,
 .committees__agenda {
-  margin-bottom: 10px;
-  text-align: justify;
+  margin-bottom: 15px;
+  text-align: center;
 }
 
 .details__subheading--default,
@@ -508,13 +520,14 @@ Todo: @kumar, make sure you clean up the entire CSS file.
   font-weight: 400;
   margin: 20px 0;
   line-height: 26.4px;
+  padding: 7.8px 15.6px;
+  border: 1px solid #f6f6f6;
 }
 
 .details__subheading--close.active {
   cursor: pointer;
   background-color: #f6f6f6;
   color: #013148;
-  padding: 7.8px 15.6px;
   border: 1px solid #013148;
   transition-duration: 0.7s;
 }
@@ -616,8 +629,8 @@ Todo: @kumar, make sure you clean up the entire CSS file.
     width: 100vw;
     align-items: flex-end;
     justify-content: flex-start;
-    clip-path: circle(100vw at 100% 94%);
-    -webkit-clip-path: circle(100vw at 100% 94%);
+    clip-path: circle(100vw at 100vw 93vh);
+    -webkit-clip-path: circle(100vw at 100vw 93vh);
   }
 
   .navbar__menu {
@@ -629,8 +642,8 @@ Todo: @kumar, make sure you clean up the entire CSS file.
 
   .navbar.hidden {
     background: transparent;
-    clip-path: circle(6vh at 91.5% 93%);
-    -webkit-clip-path: circle(6vh at 91.5% 93%);
+    clip-path: circle(5vh at calc(96vw - 4vh) 93vh);
+    -webkit-clip-path: circle(5vh at calc(96vw - 4vh) 93vh);
   }
 
   .navbar__toggle {
@@ -667,8 +680,19 @@ Todo: @kumar, make sure you clean up the entire CSS file.
   }
 
   .committees__data.active {
-    width: 80vw;
-    position: relative;
-    top: 0;
+    width: 70vw;
+    height: auto;
+  }
+
+  .committees__name {
+    height: auto;
+  }
+
+  .card__social--scr-lg {
+    display: none;
+  }
+
+  .card__social--scr-sm {
+    display: inline-block;
   }
 }
