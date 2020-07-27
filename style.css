@@ -691,6 +691,7 @@ Todo: @kumar, make sure you clean up the entire CSS file.
   .committees__data.active {
     width: 70vw;
     height: auto;
+    margin-top: 10px;
   }
 
   .committees__name {
