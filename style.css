@@ -42,7 +42,7 @@ a {
   align-items: center;
   clip-path: circle(100vw at calc(10vw + 4vh));
   -webkit-clip-path: circle(100vw at calc(10vw + 4vh));
-  transition: all 1.5s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .navbar.hidden {
@@ -61,7 +61,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 1.5s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .navbar__top.stowed {
