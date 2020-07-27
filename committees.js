@@ -11,6 +11,9 @@ function Hide(element) {
   setTimeout(function () {
     element.classList.add("hidden");
     element.classList.remove("process");
+
+    subheadingDefault.classList.add("hidden");
+    subheadingClose.classList.add("active");
   }, 1000);
 }
 
@@ -29,9 +32,6 @@ for (card of cards) {
     setTimeout(function () {
       datum.classList.add("active");
     }, 1000);
-
-    subheadingDefault.classList.add("hidden");
-    subheadingClose.classList.add("active");
   });
 }
 
