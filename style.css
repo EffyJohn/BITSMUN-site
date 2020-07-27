@@ -448,8 +448,15 @@ Todo: @kumar, make sure you clean up the entire CSS file.
   transition: opacity 1s;
   /* , width 1s ease-out 1s, padding 1s ease-out 1s; */
   text-align: center;
-  background: #00000009;
+  background: #fff;
+  border: 1px solid #013148;
+  border-radius: 25px;
   pointer-events: auto;
+  margin-top: 10px;
+}
+
+.committees__card:hover {
+  background: #e9ecef;
 }
 
 .committees__card.inactive {
@@ -509,6 +516,7 @@ Todo: @kumar, make sure you clean up the entire CSS file.
 .committees__agenda {
   margin-bottom: 15px;
   text-align: center;
+  font-size: 18px;
 }
 
 .details__subheading--default,
@@ -677,6 +685,7 @@ Todo: @kumar, make sure you clean up the entire CSS file.
 
   .committees__card {
     width: 180px;
+    padding-bottom: 2vw;
   }
 
   .committees__data.active {

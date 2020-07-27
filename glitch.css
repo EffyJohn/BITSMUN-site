@@ -1,10 +1,6 @@
-body {
-    background: #000;
-}
-
 .glitch {
     color: white;
-    font-size: 100px;
+    font-size: 40px;
     position: relative;
     width: 400px;
     margin: 0 auto;
@@ -86,7 +82,7 @@ body {
     text-shadow: -1px 0 red;
     top: 0;
     color: white;
-    background: black;
+    /* background: black; */
     overflow: hidden;
     animation: noise-anim 8s linear infinite;
   }
@@ -167,7 +163,7 @@ body {
     text-shadow: 1px 0 blue;
     top: 0;
     color: white;
-    background: black;
+    /* background: black; */
     overflow: hidden;
     animation: noise-anim-2 8s linear infinite;
   }
