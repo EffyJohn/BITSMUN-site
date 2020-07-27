@@ -491,6 +491,7 @@ Todo: @kumar, make sure you clean up the entire CSS file.
   font-weight: 300;
   margin-top: 5px;
   margin-bottom: 0;
+  padding: 0 7px;
 }
 
 .committees__img {
